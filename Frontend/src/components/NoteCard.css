@@ -1,0 +1,78 @@
+.note-card {
+  width: 100%;
+  max-width: 26rem;
+  min-height: 6rem;
+  border-radius: 20px;
+  padding: 16px;
+  margin: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Title */
+.note-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4037ea;
+  word-wrap: break-word;
+}
+
+/* Description */
+.note-desc {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.4;
+  word-wrap: break-word;
+  white-space: pre-wrap; /* long text handle kare */
+}
+
+/* Button container */
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+/* Common button */
+.btn {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Update button */
+.btn.update {
+  background-color: #22c55e;
+  color: white;
+}
+
+.btn.update:hover {
+  background-color: #16a34a;
+}
+
+/* Delete button */
+.btn.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn.delete:hover {
+  background-color: #dc2626;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .note-card {
+    max-width: 100%;
+    margin: 12px;
+  }
+}

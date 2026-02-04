@@ -1,0 +1,61 @@
+.form-contaier{
+  height: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form{
+  padding: 20px;
+  margin: 20px;
+  height: 230px;
+  width: 800px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+
+.heading{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+button{
+    padding: 12px;
+    width: 100%;
+    border: none;
+    background: #4037ea;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+  background: #2017c5;
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+
+.All-Notes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
