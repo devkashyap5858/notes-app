@@ -13,13 +13,13 @@ const AllNotes = () => {
   const [description, setDescription] = useState("");
 
   async function getNotesData() {
-    const res = await axios.get("http://localhost:3000/api/notes");
+    const res = await axios.get("https://notes-app-hdz7.onrender.com/api/notes");
     setNote(res.data.AllNotes);
   }
 
   async function submitHandler(e) {
     e.preventDefault();
-    const res = await axios.post("http://localhost:3000/api/notes", {
+    const res = await axios.post("https://notes-app-hdz7.onrender.com/api/notes", {
       title,
       description,
     });
@@ -30,7 +30,7 @@ const AllNotes = () => {
   }
 
   async function deleteNote(noteID) {
-    const res = await axios.delete(`http://localhost:3000/api/notes/${noteID}`);
+    const res = await axios.delete(`https://notes-app-hdz7.onrender.com/api/notes/${noteID}`);
     console.log(res.data.message);
     getNotesData();
   }
@@ -42,7 +42,7 @@ const AllNotes = () => {
     const newDescription = prompt("Enter new description", description);
     if (newDescription === null) return;
 
-    const res = await axios.patch(`http://localhost:3000/api/notes/${noteID}`, {
+    const res = await axios.patch(`https://notes-app-hdz7.onrender.com/api/notes/${noteID}`, {
       title: newTitle,
       description: newDescription,
     });
